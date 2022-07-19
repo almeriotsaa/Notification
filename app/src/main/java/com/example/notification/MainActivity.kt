@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
             .setContentText("0%")
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setAutoCancel(true)
-            .setProgress(100, 0, false)
+            .setProgress(100, 0, true)
             .setContentIntent(PendingIntent.getActivity(this, 0, intent, 0))
 
         notificationManager?.notify(1, builder.build())
